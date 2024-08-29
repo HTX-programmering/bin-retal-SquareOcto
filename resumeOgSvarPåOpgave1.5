@@ -1,0 +1,29 @@
+Filen fortæller om hvordan bytes, bits, og binære tal fungerer.
+Bytes er en dataenhed der er opbygget af 8 bits, med mindre andet oplyst. 
+Bits repræsenterer binære tal. Så hvis der køre strøm igennem bit'et er den på 1, og vice versa.
+Binære tal bruger et to-tals-system, hver bit repræsentere et 2 tal opløftet i dens placering i byte'et. 
+Positionen af bit'et = eksponenten for 2-tallet (starter ved 0). Så hvis den første bit er tændt, har vi 2^0 = 1.
+Hvis det andet bit er tændt, har vi 2^1. For det fjerede bit, 2^3 = 8. Dette bliver ved, helt op til antal bits.
+Når man har en serie af bits, hvor nogle er tændt og nogle er slukket, kan man beregne det tilsvarende tal.
+Et eksempel: første bit er tændt (så 2^0), anden er slukket, tredje er slukket, fjerde er tændt, femte er tændt, sjette er tændt, syvende er slukket, og ottende er også slukket.
+Så vi har 2^0 + 0 + 0 + 2^3 + 2^4 + 2^5 + 0 + 0 = 41
+          1.    2.  3.  4.    5.     6.   7.  8.
+
+Sådan virker binære tal og bits.
+
+
+
+Opgave 1.5: "I hvilke vinduer skulle kvinden tænde lys, hvis hyrden skulle komme kl 3, eller kl 5, eller kl 10."
+
+2^0 = 1, 2^1 = 2, 2^2 = 4, 2^3 = 8, 2^4 = 16, 2^5 = 32, 2^6 = 64, 2^7 = 128.
+Værdierne af de 8 bits, i en byte.
+vinduerne repræsentere hver bit, så første vindue er første bit, anden vindue er anden bit, osv., osv.
+
+For at repræsentere 3 (med bits), skal man tænde for første bit, og andet bit. Som så giver 1 + 2 = 3.
+Så kvinden ville skulle tænde for lyset i vindue 1 og vindue 2, for kl 3.
+
+For at repræsentere 5, skal man tænde for første bit (2^0 = 1), og tredje bit (2^2 = 4), som så er 1 + 4 = 5.
+Så vindue 1 og 3 skal være lyset op.
+
+For at repræsentere 10, skal man tænde for anden bit (2^1 = 2) og fjerde bit (2^3 = 8), som så er 8 + 2 = 10.
+Så vindue 2 og 4 skal være lyset op.
